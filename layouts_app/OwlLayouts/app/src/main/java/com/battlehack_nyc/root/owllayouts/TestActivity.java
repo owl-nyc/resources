@@ -15,9 +15,7 @@ public class TestActivity extends AppCompatActivity {
         setContentView(R.layout.splash_screen);
 
         TextView tx = (TextView)findViewById(R.id.splash);
-
         Typeface custom_font = Typeface.createFromAsset(getAssets(), "fonts/Montserrat-Light.otf");
-
         tx.setTypeface(custom_font);
     }
 
