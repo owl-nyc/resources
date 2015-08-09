@@ -10,7 +10,7 @@ public class TestActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.info_screen);
+        setContentView(R.layout.activity_main);
 
 //        // Always cast your custom Toolbar here, and set it as the ActionBar.
 //        Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
