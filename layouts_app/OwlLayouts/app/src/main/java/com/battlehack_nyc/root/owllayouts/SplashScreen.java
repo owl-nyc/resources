@@ -1,28 +1,22 @@
 package com.battlehack_nyc.root.owllayouts;
 
+import android.graphics.Typeface;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.TextView;
 
-public class TestActivity extends AppCompatActivity {
+public class SplashScreen extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.info_screen);
+        setContentView(R.layout.splash_screen);
 
-//        // Always cast your custom Toolbar here, and set it as the ActionBar.
-//        Toolbar tb = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(tb);
-//
-//        // Get the ActionBar here to configure the way it behaves.
-//        final ActionBar ab = getSupportActionBar();
-//        //ab.setHomeAsUpIndicator(R.drawable.ic_menu); // set a custom icon for the default home button
-//        ab.setDisplayShowHomeEnabled(true); // show or hide the default home button
-//        ab.setDisplayHomeAsUpEnabled(true);
-//        ab.setDisplayShowCustomEnabled(true); // enable overriding the default toolbar layout
-//        ab.setDisplayShowTitleEnabled(false); // disable the default title element here (for centered title)
+        TextView tx = (TextView)findViewById(R.id.splash);
+        Typeface custom_font = Typeface.createFromAsset(getAssets(), "fonts/Montserrat-Light.otf");
+        tx.setTypeface(custom_font);
     }
 
     @Override

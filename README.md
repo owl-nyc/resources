@@ -7,3 +7,5 @@ https://coolors.co/app/986d5f-1c1e20-232325-242628-363636
 Main font: Montserrat
 
 Supporting font: Museo Sans
+
+http://sourcey.com/android-custom-centered-actionbar-with-material-design/

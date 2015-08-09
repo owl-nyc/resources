@@ -1,5 +1,46 @@
-<?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent" android:layout_height="match_parent">
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.battlehacknyc.owl.NameActivity"
+    android:id="@+id/name_activity_rellayout">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/toolbar" />
+
+    <TextView android:text="Name Activity" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/name_activity_textview"
+        android:layout_marginTop="36dp"
+        android:layout_below="@+id/app_bar"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/activity_name_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="147dp" />
+
+    <Button
+        android:id="@+id/activity_name_continue"
+        android:onClick="startMainActivity"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Continue"
+        android:layout_alignTop="@+id/activity_name_name"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="42dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What&apos;s your name?"
+        android:id="@+id/textView"
+        android:layout_above="@+id/activity_name_name"
+        android:layout_alignParentStart="true" />
 
 </RelativeLayout>
