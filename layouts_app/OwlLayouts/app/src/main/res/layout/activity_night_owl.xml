@@ -1,0 +1,88 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" tools:context=".MainActivity"
+    android:background="#1c1e20">
+
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/toolbar" />
+
+    <TextView android:text="Condition:" android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textview"
+        android:layout_marginTop="35dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/app_bar"
+        android:layout_alignParentStart="true"
+        android:textSize="30dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="good"
+        android:id="@+id/condition"
+        android:textColor="#ffffff"
+        android:textSize="30dp"
+        android:layout_alignTop="@+id/textview"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/button3"
+        android:text="Start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="startNightOwlActivity"
+        android:background="#363636"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="26dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:minWidth="200dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Readings:"
+        android:layout_marginLeft="10dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textview"
+        android:layout_alignParentStart="true"
+        android:id="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/readings"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/textView3" />
+
+</RelativeLayout>
+
+<!--
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/readings"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Needs more data"
+        android:id="@+id/status"
+        android:layout_alignTop="@+id/textview"
+        android:layout_toEndOf="@+id/textview"
+        android:textColor="#ffffff" />
+
+
+
+
+
+-->
